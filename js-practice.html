@@ -17,6 +17,7 @@ let y = 3;
 console.log(y);
 let z = x * y;
 console.log(z);
+
 // Math on my own
 let actionAdd = x + y;
 console.log(actionAdd);
@@ -24,15 +25,27 @@ let actionMinus = x - y;
 console.log(actionMinus);
 let actionDivide = x/y;
 console.log(actionDivide);
+
 console.log("Working with strings:");
 let firstName = "Reagan";
 let middleName = "Elizabeth";
 let lastName = "Ritterbush";
 let name = firstName + " " + middleName + " " + lastName;
 console.log(name);
+
 // Strings on my own
 let greeting = "My name is " + name;
 console.log(greeting);
+
+console.log("Using Functions:");
+// function to square numbers
+function makeSquare(theNumb) {
+  let squared = theNumb * theNumb;
+  return squared;
+}
+let try01 = makeSquare(4);
+console.log(try01);
+
 </script>
 </body>
 </html>
