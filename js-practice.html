@@ -62,7 +62,38 @@ console.log(try03);
 let try04 = makeName("Reagan", "Elizabeth", "Ritterbush");
 console.log(try04);
 
-console.log(makeName("Sloane", "Avery", "Ritterbush").length)
+console.log(makeName("Sloane", "Avery", "Ritterbush").length);
+
+console.log("Making better name function");
+
+//Make a name with middle initial
+function makeBetterName(firstName, middleName, lastName) {
+  if (middleName.length === 1) {
+    middleName = middleName + ".";
+    let fullName = firstName + " " + middleName + " " + lastName;
+    return fullName;
+  } else {
+    let fullName = firstName + " " + middleName + " " + lastName;
+    return fullName;
+  }
+}
+
+console.log(makeBetterName("Joan", "Marie", "Larkin"));
+console.log(makeBetterName("Donald", "F", "Trump"));
+
+//Flow control functions on my own
+function makeTeam(home, away) {
+  if (home > away) {
+    let teamScore = "The home team won";
+    return teamScore;
+  } else {
+    let teamScore = "The away team won"
+    return teamScore;
+  }
+}
+
+console.log(makeTeam(5, 4));
+console.log(makeTeam(4, 5));
 
 </script>
 </body>
