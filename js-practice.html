@@ -43,8 +43,26 @@ function makeSquare(theNumb) {
   let squared = theNumb * theNumb;
   return squared;
 }
+
 let try01 = makeSquare(4);
 console.log(try01);
+
+//Functions on my own
+function makeName(first, middle, last) {
+  let fullName = first + " " + middle + " " + last;
+  return fullName;
+}
+
+let try02 = makeName("Robert", "\"Beto\"", "O'Rourke'");
+console.log(try02);
+
+let try03 = makeName("Sloane", "Avery", "Ritterbush");
+console.log(try03);
+
+let try04 = makeName("Reagan", "Elizabeth", "Ritterbush");
+console.log(try04);
+
+console.log(makeName("Sloane", "Avery", "Ritterbush").length)
 
 </script>
 </body>
