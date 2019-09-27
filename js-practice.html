@@ -86,6 +86,9 @@ function makeTeam(home, away) {
   if (home > away) {
     let teamScore = "The home team won";
     return teamScore;
+  } else if (home === away) {
+    let teamScore = "Tie game";
+    return teamScore
   } else {
     let teamScore = "The away team won"
     return teamScore;
@@ -94,6 +97,7 @@ function makeTeam(home, away) {
 
 console.log(makeTeam(5, 4));
 console.log(makeTeam(4, 5));
+console.log(makeTeam(4, 4));
 
 </script>
 </body>
